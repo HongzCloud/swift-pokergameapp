@@ -39,6 +39,10 @@ class Players {
         }
     }
     
+    public func outPlayers() {
+        players.removeAll()
+    }
+    
     public func repeatForEachPlayer<T>(_ transform: (Player) -> T) -> [T] {
         return players.map{ transform($0) }
     }

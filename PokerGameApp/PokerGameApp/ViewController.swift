@@ -45,13 +45,13 @@ class ViewController: UIViewController {
     
     @objc func changeGameType(_ sender : UISegmentedControl) {
         newGameType = PokerGame.GameType.allCases[sender.selectedSegmentIndex]
-        pokerGame = PokerGame(playerNumber: newPlayerNumber, gameType: newGameType)
+        pokerGame.updateGameType(gameType: newGameType)
         resetGame()
     }
  
     @objc func changePlayerNumber(_ sender : UISegmentedControl) {
         newPlayerNumber = PokerGame.PlayerNumber.allCases[sender.selectedSegmentIndex]
-        pokerGame = PokerGame(playerNumber: newPlayerNumber, gameType: newGameType)
+        pokerGame.updatePlayerNumber(playerNumber: newPlayerNumber)
         resetGame()
     }
     

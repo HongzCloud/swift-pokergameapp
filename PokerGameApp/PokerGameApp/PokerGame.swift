@@ -49,6 +49,15 @@ class PokerGame {
         closure(dealer)
     }
     
+    public func updateGameType(gameType: GameType) {
+        self.gameType = gameType
+    }
+    
+    public func updatePlayerNumber(playerNumber: PlayerNumber) {
+        players.outPlayers()
+        players.takeSeat(with: playerNumber)
+    }
+    
     public func resetGame() {
         players.dropAllCard()
         dealer.dropMyCards()
