@@ -96,3 +96,36 @@
 
 #### 완료날짜 2021년 02월 19일(금) 18:00
 
+---
+---
+
+# 포커게임 결과 화면
+
+#### 요구사항
+
+- 해상도별 카드 이미지 제공
+
+  > https://appicon.co/#image-sets을 이용해서 손쉽게 해상도별 이미지를 얻었다.
+
+- Card 객체와 이미지 파일명을 매치하는 방법
+
+  > 자주 바뀔 수 있는 코드는 extension을 이용하여 따로 모듈화 했습니다.
+
+-  스택뷰 안의 스택뷰 넣는 법과 UILabel 코드로 생성하는법 연습
+
+- segmentedControl을 코드로 구현하는법 연습
+
+  > Caselterable을 이용해 allcase로 세그컨트롤 생성
+
+-  ViewController에서 클로저를 통해 PokerGame에게 메소드를 대신 실행 하게 했다.
+
+- 세그먼티드컨트롤 변경시 새게임 시작
+
+  > Caselterable을 이용해 allcase[selectedIndex]로 옵션 변경시 정보 전달 해결
+
+-  아이폰 흔들기 모션(ctrl+alt+z) 시 기존옵션으로 새게임 시작
+
+![ezgif com-gif-maker (6)](https://user-images.githubusercontent.com/73683735/108992815-0e9dba80-76dd-11eb-99ae-72d4fe5b5667.gif)
+
+#### 완료날짜 2021년 02월 24일(금) 18:00
+
